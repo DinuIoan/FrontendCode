@@ -24,6 +24,10 @@ hrApp.config(['$routeProvider',function($routeProvider){
         templateUrl: 'views/employeeview.html',
         controller: 'EmployeeViewController'
     }).
+        when('/employeeadd',{
+        templateUrl: 'views/user.html',
+        controller: 'UserController'
+    }).
         otherwise({
         redirectTo: '/'
     });
