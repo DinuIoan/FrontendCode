@@ -1,0 +1,7 @@
+<div>
+    <select ng-model="color" ng-options="c as c.text for c in colors" ng-change="changeColor()">
+
+    </select>
+    <span ng-class="classColor">Some Text</span>
+    <input ng-model="input" /><div ng-repeat="color in colors| filter : input"> {{color.text }}</div>
+</div>
