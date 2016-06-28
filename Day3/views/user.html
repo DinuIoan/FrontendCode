@@ -1,0 +1,90 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h2 class="panel-title">Add employee</h2>
+    </div>
+    <div class="panel-body">
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input id="firstName" type="text" ng-model="firstName"/>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input id="lastName" type="text" ng-model="lastName"/>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input id="email" type="text" ng-model="email"/>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input id="phoneNumber" type="number" ng-model="phoneNumber"/>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label for="hireDate">Hire Date:</label>
+                    <input id="hireDate" type="text" ng-model="hireDate"/>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label for="jobId">Job Title:</label>
+                    <input id="jobId" type="text" ng-model="jobTitle"/>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label for="salary">Salary:</label>
+                    <input id="salary" type="text" ng-model="salary"/>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label for="commissionPct">Commission:</label>
+                    <input id="commissionPct" type="text" ng-model="commissionPct"/>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label for="departmentId">Department:</label>
+                    <input id="departmentId" type="text" ng-model="departamentName"/>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label for="manager">Manager:</label>
+                    <input id="manager" type="text" ng-model="managerName"/>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5"></div>
+            <div class="col-md-7">
+                <div class="container">
+                    <button class="btn btn-default" ng-click="back()">Back</button>
+                    <button class="btn btn-default" ng-click="reset(firstName,lastName,email,phoneNumber,hireDate,jobId,salary,commissionPct,departamentId,manager)">Reset</button>
+                    <button class="btn btn-default" ng-click="save(firstName,lastName,email,phoneNumber,hireDate,jobId,salary,commissionPct,departamentId,manager)">Save</button>
+                    <button class="btn btn-default" ng-click="show()">Show/hide User list</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
